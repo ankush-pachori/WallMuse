@@ -1,0 +1,117 @@
+.masonry-grid {
+  columns: 4;
+  column-gap: 16px;
+  padding: 16px;
+  margin-top: 80px;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.masonry-item:hover {
+  transform: scale(1.02);
+}
+
+.masonry-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 1rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.masonry-item:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.image-overlay button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image-overlay button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1200px) {
+  .masonry-grid {
+    columns: 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .masonry-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonry-grid {
+    columns: 1;
+  }
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.loading-animation {
+  display: flex;
+  gap: 8px;
+}
+
+.loading-animation div {
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  animation: bounce 0.5s cubic-bezier(0.19, 0.57, 0.3, 0.98) infinite;
+}
+
+.loading-animation div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loading-animation div:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
