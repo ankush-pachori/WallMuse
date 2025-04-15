@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WallMuse/static/css/main.3e02ff37.css",
+    "main.js": "/WallMuse/static/js/main.49d2eb50.js",
+    "static/js/453.f6d97cf9.chunk.js": "/WallMuse/static/js/453.f6d97cf9.chunk.js",
+    "index.html": "/WallMuse/index.html",
+    "main.3e02ff37.css.map": "/WallMuse/static/css/main.3e02ff37.css.map",
+    "main.49d2eb50.js.map": "/WallMuse/static/js/main.49d2eb50.js.map",
+    "453.f6d97cf9.chunk.js.map": "/WallMuse/static/js/453.f6d97cf9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e02ff37.css",
+    "static/js/main.49d2eb50.js"
+  ]
+}
